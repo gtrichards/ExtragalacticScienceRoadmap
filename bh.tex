@@ -36,8 +36,9 @@ For unobscured quasars we must optimize the identification of BHs using
 \item colors
 \item variability
 \item astrometry
+\item multi-wavelength matching
 \end{itemize}
----ideally all three simultaneously.  Moreover, we will have to
+---ideally all four simultaneously.  Moreover, we will have to
 consider the impact of star-galaxy separation (can we use the same
 algorithm(s) regardless of morphology?) and the evolution of these
 properties with redshift.
@@ -135,7 +136,8 @@ variability parameters often compares very different rest frames.
 $A$-$\gamma$ is certainly the simplest parameterization, but the
 damped random walk (DRW) is currently the most popular.  Further work
 is needed to determine if these are sufficiently accurate to use or if
-a different parameterization might be more effective.
+a different parameterization (e.g., Slepian wavelet variance or
+Auto-Regressive Moving Average) might be more effective.
 
 Work with SDSS Stripe 82 has allowed some early work in this
 direction.  More still needed, possibly taking advantage also of
@@ -146,9 +148,9 @@ Kepler, SDSS-RM, and/or OzDES data.
 
 The last way that LSST will identify BHs is by combining with multiwavelength data.  This can be considered more generally as ``combination with data from other facilities'' as some data (e.g., Euclid) may also be in the optical.
 
-We will largely concentrate on the tasks needed for obscured quasars and low-luminosity AGNs as multi-wavelength data will likely add only episilon to our efforts robust selection of luminous type 1 quasars.  This is particularly true at high reshift since combining with multiwavelength data generally means focusing on the brightest objects given how much deeper (for a given SED) LSST will reach than the typical IR and X-ray limits of large-area surveys.  In nearly all cases we will have tiered multiwavelength data to contend with: shallow over a large area to deep over a small area.
+Multi-wavelength matching will be crucial for obscured quasars and low-luminosity AGNs.  This is particularly true at high reshift since combining with multiwavelength data generally means focusing on the brightest objects given how much deeper (for a given SED) LSST will reach than the typical IR and X-ray limits of large-area surveys.  In nearly all cases we will have tiered multiwavelength data to contend with: shallow over a large area to deep over a small area.
 
-For unobscured AGNs multiwavelength data can be used to modify the AGN probabilities for objects on the border; this will be most useful within the context of a probabilistic redshift distribution (see next subsection).  Objects detected in the X-ray or IR with sufficiently high predicted luminosity will have increased AGN probability.  Objects detected in the UV will have significantly decreased AGN probability.
+For unobscured AGNs multiwavelength data will enhance our ability to identify high-redshift quasars and can be used to modify the AGN probabilities for objects on the border; this will be most useful within the context of a probabilistic redshift distribution (see next subsection).  Objects detected in the X-ray or IR with sufficiently high predicted luminosity will have increased AGN probability.  Objects detected in the UV will have significantly decreased AGN probability (for high photometric redshifts), while radio-detected objects will have increased probability.   Radio data will further be important in understanding the physics that regulates the production of radio jets in a fraction of AGNs.
 
 For obscured and low-luminosity AGNs, the optical data from LSST may not be sufficient to identify the object as an AGN.  Some low-luminosity AGNs may be identified as having nuclear variability, but for the faintest objects the errors on the variability will be insufficient for robust classification.  As such, for these classes of objects will we be completely dependent upon multiwavelenth SED fitting and X-ray and/or IR luminosity and radio morphology to identify as AGNs what LSST sees as a galaxy.
 
@@ -213,6 +215,10 @@ The strong lens working group will have their own road map task list, but beyond
 \subsection{Miscellaneous}
 
 Other to do items not covered above include the need to build a database of existing spectroscopic identifications, obtaining additional spectroscopy in the DDFs and Stripe 82, pre-planning for follow-up observations, and  announcing LSST observing schedule to other facilities.
+
+\subsection{Summary}
+
+Here we should put a table summarizing all of the key to do items.
 
 
 
